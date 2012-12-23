@@ -4,6 +4,7 @@ Template.feedback.anyTeamSelected = ->
 Template.feedback.events
     'click .actions .add': (evt) ->
         $form = $(evt.target).parents('.new-feedback')
+        teamId = Session.get 'teamId'
 
         if $form.length
             feedback = {}
@@ -13,10 +14,11 @@ Template.feedback.events
                 $(el).val('')
 
             _(feedback).extend
-                teamId: Session.get 'teamId'
+                teamId: teamId
                 timestamp: +new Date
 
-        Feedback.insert feedback
+        feedbackId = Feedback.insert feedback
+        Meteor.call 'notify', teamId, feedbackId
 
 
 Template.feedback.feedback = ->
