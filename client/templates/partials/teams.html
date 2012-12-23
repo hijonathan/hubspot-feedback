@@ -1,23 +1,23 @@
 <template name="teams">
-  <h3>Teams</h3>
-  <div id="teams">
-    {{#each teams}}
-      <div class="team {{selected}}">
-        {{#if editing}}
-          <div class="edit">
-            <input class="team-name-input" id="team-name-input" type="text" value="{{name}}" />
-          </div>
-        {{else}}
-          <div class="display">
-            <a class="team-name {{name_class}}" href="/{{_id}}">
-              {{name}}
-            </a>
-          </div>
-        {{/if}}
-      </div>
-    {{/each}}
-  </div>
-  <div id="createList">
-    <input type="text" id="new-team" placeholder="New team" />
-  </div>
+    <h3>Teams</h3>
+    <div id="teams">
+        {{#each teams}}
+            <div class="team {{selected}}">
+                {{#if editing}}
+                    <div class="edit">
+                        <input class="team-name-input" id="team-name-input" type="text" value="{{name}}" />
+                    </div>
+                {{else}}
+                    <div class="display">
+                        <a class="team-name {{name_class}}" href="/{{_id}}">
+                            {{name}}
+                        </a>
+                    </div>
+                {{/if}}
+            </div>
+        {{/each}}
+    </div>
+    <div id="createList">
+        <input type="text" id="new-team" placeholder="New team" />
+    </div>
 </template>

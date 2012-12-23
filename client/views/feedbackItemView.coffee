@@ -1,4 +1,4 @@
-Template.feedbackItem.done_class = ->
+Template.feedbackItem.doneClass = ->
     (if @done then "done" else "")
 
 Template.feedbackItem.doneCheckbox = ->
