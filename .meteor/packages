@@ -6,3 +6,10 @@
 autopublish
 insecure
 preserve-inputs
+moment
+coffeescript
+underscore
+jquery
+bootstrap
+backbone
+stylus

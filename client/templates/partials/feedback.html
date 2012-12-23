@@ -1,0 +1,35 @@
+<template name="feedback">
+    {{#if anyTeamSelected}}
+    <div id="items-view">
+        <table id="item-list">
+            <tbody>
+                {{#each feedback}}
+                    {{> feedbackItem }}
+                {{/each}}
+
+                <tr class="new-feedback">
+                    <td></td>
+                    <td>
+                        <textarea class='new-feedback-value' name='text' type="text" placeholder="Add your feedback" />
+                    </td>
+                    <td class="feedback-score">
+                        <select class='new-feedback-value' name='score'>
+                            <option value='5'>5</option>
+                            <option value='4'>4</option>
+                            <option value='3'>3</option>
+                            <option value='2'>2</option>
+                            <option value='1'>1</option>
+                        </select>
+                    </td>
+                    <td class="feedback-author">
+                        <input class='new-feedback-value' name='by' type="email" placeholder="jkim@hubspot.com" />
+                    </td>
+                    <td class='actions'>
+                        <a class='add btn btn-mini btn-primary'>Submit<a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {{/if}}
+</template>

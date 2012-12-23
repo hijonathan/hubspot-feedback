@@ -1,0 +1,19 @@
+<template name="feedbackItem">
+    <tr class="feedback {{doneClass}}">
+        <td>
+            <input class="check" name="markdone" type="checkbox" {{{doneCheckbox}}} />
+        </td>
+        {{#if editing}}
+            <td class="edit">
+                <input id="feedback-input" type="text" value="{{text}}" />
+            </td>
+        {{else}}
+            <td class="feedback-text">{{text}}</td>
+        {{/if}}
+        <td class="feedback-score">{{score}}</td>
+        <td class="feedback-author">{{by}}</td>
+        <td class='actions'>
+            <a class='delete btn btn-mini'>Delete<a>
+        </td>
+    </tr>
+</template>
