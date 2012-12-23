@@ -2,6 +2,21 @@
     {{#if anyTeamSelected}}
     <div id="items-view">
         <table id="item-list">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>
+                        Feedback
+                    </td>
+                    <td>
+                        Customer Pain
+                    </td>
+                    <td>
+                        Submitted By
+                    </td>
+                    <td></td>
+                </tr>
+            </thead>
             <tbody>
                 {{#each feedback}}
                     {{> feedbackItem }}
@@ -12,7 +27,7 @@
                     <td>
                         <textarea class='new-feedback-value' name='text' type="text" placeholder="Add your feedback" />
                     </td>
-                    <td class="feedback-score">
+                    <td>
                         <select class='new-feedback-value' name='score'>
                             <option value='5'>5</option>
                             <option value='4'>4</option>
@@ -21,7 +36,7 @@
                             <option value='1'>1</option>
                         </select>
                     </td>
-                    <td class="feedback-author">
+                    <td>
                         <input class='new-feedback-value' name='by' type="email" placeholder="jkim@hubspot.com" />
                     </td>
                     <td class='actions'>
