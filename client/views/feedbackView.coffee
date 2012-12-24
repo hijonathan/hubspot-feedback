@@ -14,6 +14,7 @@ Template.feedback.events
                 feedback[$(el).attr('name')] = $(el).val()
                 $(el).val('')
 
+            feedback.score = parseInt feedback.score, 10
             _(feedback).extend
                 teamId: teamId
                 timestamp: +new Date
