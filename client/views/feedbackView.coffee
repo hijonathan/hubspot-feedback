@@ -22,6 +22,16 @@ Template.feedback.events
         feedbackId = Feedback.insert feedback
         Meteor.call 'notify', teamId, feedbackId
 
+    # TODO: Make this work
+    'click th': (evt, tmpl) ->
+        $target = $ evt.target
+        sortBy = $target.data 'sortby'
+
+        if sortBy?
+            opts = sort: {}
+            opts.sort[sortBy] = 1
+
+            Feedback.find {}, opts
 
 
 Template.feedback.feedback = ->
