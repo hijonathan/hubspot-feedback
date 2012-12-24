@@ -1,16 +1,47 @@
 # Initial teams
 
 TEAMS = [
-    "Application",
-    "Automation",
-    "Contacts",
-    "Content",
-    "Data",
-    "Infrastructure",
-    "Integrations",
-    "Marketplace",
-    "Reporting",
-    "Social"
+    {
+        name: "Application"
+        description: "Application team"
+        email: "application-team+feedback@hubspot.com"
+    }, {
+        name: "Automation"
+        description: "Automation team"
+        email: "automation-team+feedback@hubspot.com"
+    }, {
+        name: "Contacts"
+        description: "Contacts team"
+        email: "contacts-team+feedback@hubspot.com"
+    }, {
+        name: "Content"
+        description: "Content team"
+        email: "content-team+feedback@hubspot.com"
+    }, {
+        name: "Data"
+        description: "Data team"
+        email: "data-team+feedback@hubspot.com"
+    }, {
+        name: "Infrastructure"
+        description: "Infrastructure team"
+        email: "infrastructure-team+feedback@hubspot.com"
+    }, {
+        name: "Integrations"
+        description: "Integrations team"
+        email: "integrations-team+feedback@hubspot.com"
+    }, {
+        name: "Marketplace"
+        description: "Marketplace team"
+        email: "marketplace-team+feedback@hubspot.com"
+    }, {
+        name: "Reporting"
+        description: "Reporting team"
+        email: "reporting-team+feedback@hubspot.com"
+    }, {
+        name: "Social"
+        description: "Social Media team"
+        email: "sm+feedback@hubspot.com"
+    }
 ]
 
 EXAMPLE_FEEDBACK = {
