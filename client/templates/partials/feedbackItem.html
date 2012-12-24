@@ -1,7 +1,7 @@
 <template name="feedbackItem">
     <tr class="feedback {{doneClass}}">
         <td>
-            <input class="check" name="markdone" type="checkbox" {{{doneCheckbox}}} />
+            {{> commentsCount}}
         </td>
         {{#if editing}}
             <td class="edit">
@@ -15,5 +15,9 @@
         <td class='actions'>
             <a class='delete btn btn-mini'>Delete<a>
         </td>
+    </tr>
+    <tr class="hidden comments">
+        <td></td>
+        <td colspan="4">{{> comments}}</td>
     </tr>
 </template>

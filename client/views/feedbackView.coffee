@@ -1,6 +1,7 @@
 Template.feedback.anyTeamSelected = ->
     not Session.equals("teamId", null)
 
+
 Template.feedback.events
     'click .actions .add': (evt) ->
         $form = $(evt.target).parents('.new-feedback')
@@ -21,13 +22,14 @@ Template.feedback.events
         Meteor.call 'notify', teamId, feedbackId
 
 
-Template.feedback.feedback = ->
 
+Template.feedback.feedback = ->
     # Determine which feedback to display in main pane,
     # selected based on teamId and tag_filter.
-    teamId = Session.get("teamId")
+    teamId = Session.get "teamId"
     return {} unless teamId
     sel = teamId: teamId
+
     Feedback.find sel,
         sort:
             timestamp: 1

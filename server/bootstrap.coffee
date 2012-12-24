@@ -20,17 +20,37 @@ EXAMPLE_FEEDBACK = {
 }
 
 
+EXAMPLE_COMMENTS = [
+    {
+        by: "jkim@hubspot.com"
+        text: "You're my hero."
+    }, {
+        by: "mneuwirth@hubspot.com"
+        text: "I like it, but not enough animations."
+    }
+]
+
+
 Meteor.startup ->
 
     if Teams.find().count() is 0
         timestamp = +new Date
         for team in TEAMS
-            teamId = Teams.insert name: team
+            uniqueTimestamp = timestamp += 1
+            teamId = Teams.insert team
 
             feedback = _(EXAMPLE_FEEDBACK).clone()
-            feedback.extend {
+            _(feedback).extend {
                 teamId,
-                createdAt: timestamp += 1
+                createdAt: uniqueTimestamp
             }
 
-            Feedback.insert feedback
+            feedbackId = Feedback.insert feedback
+
+            for comment in EXAMPLE_COMMENTS
+                _(comment).extend {
+                    feedbackId,
+                    createdAt: uniqueTimestamp
+                }
+
+                Comments.insert comment

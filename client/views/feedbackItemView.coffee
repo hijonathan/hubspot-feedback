@@ -38,6 +38,12 @@ Template.feedbackItem.events
 
         , 300
 
+    'click': (evt, tmpl) ->
+        evt.preventDefault()
+
+        if $(evt.target).parents('tr').hasClass 'feedback'
+            $(tmpl.find('.comments')).toggleClass 'hidden'
+
 Template.feedbackItem.events okCancelEvents("#feedback-input",
     ok: (value) ->
         Feedback.update @_id,

@@ -4,3 +4,7 @@ Meteor.publish 'teams', ->
 
 Meteor.publish 'feedback', (teamId) ->
     Feedback.find teamId: teamId
+
+
+Meteor.publish 'comment', (feedbackId) ->
+    Comment.find feedbackId: feedbackId
