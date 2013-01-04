@@ -2,7 +2,10 @@
     {{#each comments}}
         <div class="comment">
             <p>{{text}}</p>
-            <span>{{by}}</span>
+            <span class="author">By {{by}} {{parsedDate}}</span>
         </div>
     {{/each}}
+
+    <textarea class="new-comment span12" placeholder="Four score and seven years ago..."></textarea>
+
 </template>
