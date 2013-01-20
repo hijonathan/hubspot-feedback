@@ -14,6 +14,5 @@ bootstrap
 backbone
 stylus
 email
-accounts-password
-accounts-ui
 accounts-google
+accounts-ui
