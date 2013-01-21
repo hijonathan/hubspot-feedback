@@ -4,6 +4,7 @@
     "branch": "master"
   },
   "packages": {
-    "moment": {}
+    "moment": {},
+    "jade-handlebars": {}
   }
 }

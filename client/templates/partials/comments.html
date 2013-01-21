@@ -1,11 +1,14 @@
 <template name="comments">
-    {{#each comments}}
-        <div class="comment">
-            <p>{{text}}</p>
-            <span class="author">By {{by}} {{parsedDate}}</span>
-        </div>
-    {{/each}}
+    <div class='comments-list'>
+        {{#each comments}}
+            <div class="comment {{selfAuthored}}">
+                <p class="author">By {{authorName}} {{parsedDate}}</p>
+                <p>{{text}}</p>
+            </div>
+        {{/each}}
+    </div>
 
-    <textarea class="new-comment span12" placeholder="Four score and seven years ago..."></textarea>
+    <textarea class="new-comment span5" placeholder="Four score and seven years ago..."></textarea>
+    <a class='btn btn-primary submit'>Post</a>
 
 </template>

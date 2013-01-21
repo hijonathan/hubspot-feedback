@@ -1,8 +1,8 @@
-Template.feedback.anyTeamSelected = ->
+Template.feedbackList.anyTeamSelected = ->
     not Session.equals("teamId", null)
 
 
-Template.feedback.events
+Template.feedbackList.events
     'click .actions .add': (evt) ->
         $form = $(evt.target).parents('.new-feedback')
         teamId = Session.get 'teamId'
@@ -17,7 +17,7 @@ Template.feedback.events
             feedback.score = parseInt feedback.score, 10
             _(feedback).extend
                 teamId: teamId
-                timestamp: +new Date
+                createdAt: +new Date
 
         feedbackId = Feedback.insert feedback
         Meteor.call 'notify', teamId, feedbackId
@@ -34,7 +34,7 @@ Template.feedback.events
             Feedback.find {}, opts
 
 
-Template.feedback.feedback = ->
+Template.feedbackList.feedback = ->
     # Determine which feedback to display in main pane,
     # selected based on teamId and tag_filter.
     teamId = Session.get "teamId"
@@ -43,4 +43,4 @@ Template.feedback.feedback = ->
 
     Feedback.find sel,
         sort:
-            timestamp: 1
+            createdAt: -1

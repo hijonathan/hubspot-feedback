@@ -1,0 +1,18 @@
+<template name="feedbackListItem">
+    <tr class="feedback {{unreadClass}} {{selected}}">
+        <td class='small-cell'>
+            {{> commentsCount}}
+        </td>
+        {{#if editing}}
+            <td class="edit">
+                <input id="feedback-input" type="text" value="{{text}}" />
+            </td>
+        {{else}}
+            <td class="feedback-text">{{text}}</td>
+        {{/if}}
+        <td class="feedback-score small-cell">{{score}}</td>
+        <td class='actions small-cell'>
+            <i class="icon-chevron-right"></i>
+        </td>
+    </tr>
+</template>

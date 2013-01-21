@@ -6,13 +6,18 @@ Comments = new Meteor.Collection 'comments'
 # Session states
 
 # ID of currently selected team
-Session.set('teamId', null)
+Session.set 'teamId', null
 
-# When editing a team name, ID of the team
-Session.set('editingTeamName', null)
+Session.set 'editingTeamName', null
 
-# When editing feedback text, ID of the feedback
-Session.set('editingFeedbackItem', null)
+Session.set 'editingFeedbackItem', null
+Session.set 'viewingFeedbackItem', null
+
+
+Meteor.subscribe 'comments'
+
+
+Meteor.subscribe 'userData'
 
 
 Meteor.subscribe 'teams', ->
@@ -24,5 +29,12 @@ Meteor.subscribe 'teams', ->
 
 Meteor.autosubscribe ->
     teamId = Session.get 'teamId'
+
     if teamId
         Meteor.subscribe 'feedback', teamId
+
+        if not Session.get 'viewingFeedbackItem'
+            feedbackItem = Feedback.findOne {teamId: teamId}, {sort: {createdAt: -1}}
+
+            if feedbackItem
+                Session.set 'viewingFeedbackItem', feedbackItem._id

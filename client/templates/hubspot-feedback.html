@@ -1,14 +1,40 @@
 <head>
-    <title>hubspot-feedback</title>
+    <title>HubSpot Internal Feedback</title>
 </head>
 
 <body>
-    <div id="main-pane">
-        {{> feedback}}
-    </div>
 
-    <div id="side-pane">
-        {{loginButtons}}
-        {{> teams}}
-    </div>
+    {{#if currentUser}}
+
+        <div class='container'>
+            <div class='row'>
+                <div id="sidebar" class='span2 affixed'>
+                    <div class='content-wrapper affix'>
+                        <div id='logout-screen'>
+                            {{loginButtons}}
+                        </div>
+                        {{> teams}}
+                    </div>
+                </div>
+
+                <div id="list" class='span5'>
+                    <div class='blur affix'></div>
+                    <div class='content-wrapper'>
+                        {{> feedbackList}}
+                    </div>
+                </div>
+
+                <div id="detail" class='span5'>
+                    <div class='content-wrapper affix'>
+                        {{> feedbackDetail}}
+                        {{> comments}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{else}}
+        {{> login}}
+    {{/if}}
+
 </body>

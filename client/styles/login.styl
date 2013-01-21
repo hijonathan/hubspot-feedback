@@ -1,0 +1,53 @@
+@import 'nib'
+@import 'constants'
+
+
+#login-screen
+    position absolute
+    width 100%
+    top 35%
+
+    h1
+        font-size 30px
+        font-weight 200
+        margin-bottom 0
+
+    p
+        font-size 13px
+        color #aaa
+
+    #login-buttons
+        margin-top 20px
+
+
+    .login-wrapper
+        text-align center
+        margin 0 auto
+        width 350px
+        padding 15px
+        border-radius 3px
+        border 1px solid #ccc
+        box-shadow inset 0 0 5px #eee
+        background-color whitesmoke
+
+        .alert
+            font-size 13px
+
+
+#logout-screen
+    #login-buttons
+        margin-bottom 10px
+
+    .login-display-name, .login-button
+        display inline-block
+
+    .login-button
+        font-size 11px
+        color link-color
+        cursor pointer
+
+        &:hover
+            text-decoration underline
+
+.accounts-dialog
+    display none

@@ -1,0 +1,17 @@
+// Mixins
+
+arrow(position = 'top', color = #e7ffd4)
+
+    &:after
+        top -14px
+        left 0
+        bottom auto
+        left auto
+        border-width 0 19px 14px 0
+        border-color @background-color transparent
+
+        content ""
+        position absolute
+        border-style solid
+        display block
+        width 0

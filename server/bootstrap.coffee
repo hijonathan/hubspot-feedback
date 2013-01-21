@@ -46,8 +46,8 @@ TEAMS = [
 
 EXAMPLE_FEEDBACK = {
     score: 5
-    by: "jkim@hubspot.com"
-    text: "You're kinda the most awesome team ever."
+    by: "btoder@hubspot.com"
+    text: "Social media screen there are no arrows on the preview image and it is not intuitive that you should click on the image to change images. People are usually scared to click to much in the social media tool for fear it will publish."
 }
 
 
@@ -70,18 +70,22 @@ Meteor.startup ->
             uniqueTimestamp = timestamp += 1
             teamId = Teams.insert team
 
-            feedback = _(EXAMPLE_FEEDBACK).clone()
-            _(feedback).extend {
-                teamId,
-                createdAt: uniqueTimestamp
-            }
-
-            feedbackId = Feedback.insert feedback
-
-            for comment in EXAMPLE_COMMENTS
-                _(comment).extend {
-                    feedbackId,
-                    createdAt: uniqueTimestamp
+            feedbackItems = 0
+            while feedbackItems < 100
+                feedback = _(EXAMPLE_FEEDBACK).clone()
+                feedback.text = "#{uniqueTimestamp} #{feedback.text}"
+                _(feedback).extend {
+                    teamId,
+                    createdAt: uniqueTimestamp++
                 }
 
-                Comments.insert comment
+                feedbackId = Feedback.insert feedback
+                feedbackItems++
+
+                for comment in EXAMPLE_COMMENTS
+                    _(comment).extend {
+                        feedbackId,
+                        createdAt: uniqueTimestamp++
+                    }
+
+                    Comments.insert comment

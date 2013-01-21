@@ -6,13 +6,19 @@
   },
   "dependencies": {
     "basePackages": {
-      "moment": {}
+      "moment": {},
+      "jade-handlebars": {}
     },
     "packages": {
       "moment": {
         "git": "https://github.com/possibilities/meteor-moment.git",
         "tag": "v1.7.0",
         "commit": "c64b6ec0e714b9556f4b6643d430b868ba69d3d7"
+      },
+      "jade-handlebars": {
+        "git": "https://github.com/SimonDegraeve/meteor-jade-handlebars.git",
+        "tag": "v0.2.5",
+        "commit": "d0419f51e3b155ffd8090b4410562a5585af165b"
       }
     }
   }

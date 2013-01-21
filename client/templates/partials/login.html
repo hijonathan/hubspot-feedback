@@ -1,0 +1,23 @@
+<template name="login">
+    <div id='login-screen'>
+        <div class='login-wrapper'>
+            <h1>Welcome stranger.</h1>
+            <p>Ready to give some feedback?</p>
+
+            {{#if errorMessage}}
+                <div class='alert alert-error'>
+                    <strong>Yikes!</strong>
+                    {{errorMessage}}
+                </div>
+            {{/if}}
+            {{#if infoMessage}}
+                <div class='alert alert-info'>
+                    <strong>Heads up:</strong>
+                    {{infoMessage}}
+                </div>
+            {{/if}}
+
+            {{ loginButtons }}
+        </div>
+    </div>
+</template>

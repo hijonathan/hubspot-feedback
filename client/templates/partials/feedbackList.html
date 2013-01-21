@@ -1,0 +1,34 @@
+<template name="feedbackList">
+    {{#if anyTeamSelected}}
+    <table id="item-list" class='table table-hover'>
+        <tbody>
+            {{#each feedback}}
+                {{> feedbackListItem }}
+            {{/each}}
+
+<!--             <tr class="new-feedback">
+                <td></td>
+                <td>
+                    <textarea class='new-feedback-value' name='text' type="text" placeholder="Add your feedback" />
+                </td>
+                <td>
+                    <select class='new-feedback-value' name='score' placeholder='Choose feedback'>
+                        <option value=''></option>
+                        <option value='5'>5</option>
+                        <option value='4'>4</option>
+                        <option value='3'>3</option>
+                        <option value='2'>2</option>
+                        <option value='1'>1</option>
+                    </select>
+                </td>
+                <td>
+                    <input class='new-feedback-value disabled' name='by' type="email" value="{{currentUser.primaryEmail}}" disabled />
+                </td>
+                <td class='actions'>
+                    <a class='add btn btn-mini btn-primary' tabindex="0">Submit<a>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+    {{/if}}
+</template>

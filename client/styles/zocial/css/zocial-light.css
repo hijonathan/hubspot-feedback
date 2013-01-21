@@ -1,0 +1,124 @@
+/* :hover adjustments for light background buttons */
+/* line 8, ../sass/zocial-light.sass */
+.zocial.email:focus, .zocial.email:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.15)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+}
+
+/* :active adjustments for light background buttons */
+/* line 21, ../sass/zocial-light.sass */
+.zocial.email:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+}
+
+/* Button icon and color */
+/* Icon characters are stored in unicode private area */
+/* line 32, ../sass/zocial-light.sass */
+.zocial.android:before {
+  content: "&";
+}
+/* line 34, ../sass/zocial-light.sass */
+.zocial.email:before {
+  content: "]";
+  color: #312c2a;
+}
+/* line 37, ../sass/zocial-light.sass */
+.zocial.facebook:before {
+  content: "f";
+}
+/* line 39, ../sass/zocial-light.sass */
+.zocial.google:before {
+  content: "G";
+}
+/* line 41, ../sass/zocial-light.sass */
+.zocial.googleplus:before {
+  content: "+";
+}
+/* line 43, ../sass/zocial-light.sass */
+.zocial.guest:before {
+  content: "?";
+}
+/* line 45, ../sass/zocial-light.sass */
+.zocial.iphone:before {
+  content: "(";
+}
+/* line 47, ../sass/zocial-light.sass */
+.zocial.linkedin:before {
+  content: "L";
+}
+/* line 49, ../sass/zocial-light.sass */
+.zocial.pinterest:before {
+  content: "1";
+}
+/* line 51, ../sass/zocial-light.sass */
+.zocial.rss:before {
+  content: "R";
+}
+/* line 53, ../sass/zocial-light.sass */
+.zocial.twitter:before {
+  content: "T";
+}
+/* line 55, ../sass/zocial-light.sass */
+.zocial.youtube:before {
+  content: "U";
+}
+
+/* Button background and text color */
+/* line 61, ../sass/zocial-light.sass */
+.zocial.android {
+  background-color: #a4c639;
+}
+/* line 63, ../sass/zocial-light.sass */
+.zocial.email {
+  background-color: #f0f0eb;
+  color: #312c2a;
+}
+/* line 66, ../sass/zocial-light.sass */
+.zocial.facebook {
+  background-color: #4863ae;
+}
+/* line 68, ../sass/zocial-light.sass */
+.zocial.google {
+  background-color: #4e6cf7;
+}
+/* line 70, ../sass/zocial-light.sass */
+.zocial.googleplus {
+  background-color: #dd4b39;
+}
+/* line 72, ../sass/zocial-light.sass */
+.zocial.guest {
+  background-color: #1b4d6d;
+}
+/* line 74, ../sass/zocial-light.sass */
+.zocial.iphone {
+  background-color: #007dcb;
+}
+/* line 76, ../sass/zocial-light.sass */
+.zocial.linkedin {
+  background-color: #0083a8;
+}
+/* line 78, ../sass/zocial-light.sass */
+.zocial.pinterest {
+  background-color: #c91618;
+}
+/* line 80, ../sass/zocial-light.sass */
+.zocial.rss {
+  background-color: #ff7f25;
+}
+/* line 82, ../sass/zocial-light.sass */
+.zocial.twitter {
+  background-color: #46c0fb;
+}
+/* line 84, ../sass/zocial-light.sass */
+.zocial.youtube {
+  background-color: red;
+}

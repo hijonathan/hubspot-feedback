@@ -1,19 +1,18 @@
-Template.feedbackItem.doneClass = ->
-    (if @done then "done" else "")
+Template.feedbackListItem.unreadClass = ->
+    if not @read then "unread" else ""
 
-Template.feedbackItem.doneCheckbox = ->
-    (if @done then "checked=\"checked\"" else "")
-
-Template.feedbackItem.editing = ->
+Template.feedbackListItem.editing = ->
     Session.equals "editingFeedbackItem", @_id
 
+Template.feedbackListItem.selected = ->
+    if Session.equals 'viewingFeedbackItem', @_id then "active" else ""
 
-Template.feedbackItem.events
+
+Template.feedbackListItem.events
     "click .check": ->
         Feedback.update @_id,
             $set:
-                done: not @done
-
+                read: not @read
 
     "click .delete": ->
         Feedback.remove @_id
@@ -40,11 +39,28 @@ Template.feedbackItem.events
 
     'click': (evt, tmpl) ->
         evt.preventDefault()
+        feedbackId = @_id
+        Session.set 'viewingFeedbackItem', feedbackId
 
-        if $(evt.target).parents('tr').hasClass 'feedback'
-            $(tmpl.find('.comments')).toggleClass 'hidden'
+        # Wait a bit before declaring it 'read'
+        # TODO: Do this on a per-user basis
+        window.clearTimeout Session.get 'readTimeoutId'
+        Session.set 'readTimeoutId', null
 
-Template.feedbackItem.events okCancelEvents("#feedback-input",
+        readTimeoutId = window.setTimeout ->
+            Feedback.update
+                _id: feedbackId
+            ,
+                $set:
+                    read: true
+        , 1000
+
+        console.log feedbackId
+
+        Session.set 'readTimeoutId', readTimeoutId
+
+
+Template.feedbackListItem.events okCancelEvents("#feedback-input",
     ok: (value) ->
         Feedback.update @_id,
             $set:

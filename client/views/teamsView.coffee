@@ -37,10 +37,7 @@ Template.teams.events okCancelEvents("#team-name-input",
         Session.set "editingTeamName", null
 )
 Template.teams.selected = ->
-    if Session.equals("teamId", @_id) then "selected" else ""
+    if Session.equals("teamId", @_id) then "active" else ""
 
 Template.teams.nameClass = ->
     if @name then "" else "empty"
-
-Template.teams.editing = ->
-    Session.equals "editingTeamName", @_id

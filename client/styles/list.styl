@@ -1,0 +1,37 @@
+@import 'nib'
+
+#list
+    table
+        table-layout fixed
+
+        .small-cell
+            width 20px
+
+        tr
+            color #ccc
+            cursor pointer
+
+            &.unread, &.active
+                color #333
+
+                .badge
+                    opacity 1
+
+            &.unread
+                font-weight bold
+
+            &.active
+                background-color whiteSmoke
+
+            &:hover, &.active
+                .icon-chevron-right
+                    opacity 1
+
+            .icon-chevron-right, .badge
+                opacity 0.25
+
+        td.feedback-text
+            display block
+            overflow-x hidden
+            text-overflow ellipsis
+            white-space nowrap

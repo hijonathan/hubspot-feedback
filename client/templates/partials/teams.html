@@ -1,27 +1,12 @@
 <template name="teams">
-    <h3>Teams</h3>
-    <div id="teams">
+    <ul id="teams" class='nav nav-list affix pill-nav-list'>
         {{#each teams}}
-            <div class="team {{selected}}">
-                {{#if editing}}
-                    <div class="edit">
-                        <input class="team-name-input" id="team-name-input" type="text" value="{{name}}" />
-                    </div>
-                {{else}}
-                    <div class="display">
-                        <a class="team-name {{nameClass}}" href="/{{_id}}">
-                            {{name}}
-                        </a>
-                        <div class="team-meta">
-                            <p>{{description}}</p>
-                            <!-- <p><a href="mailto:{{email}}">{{email}}</a></p> -->
-                        </div>
-                    </div>
-                {{/if}}
-            </div>
+            <li class="team {{selected}}">
+                <a class="team-name {{nameClass}}" href="/{{_id}}">
+                    <i class="icon-chevron-right"></i>
+                    {{name}}
+                </a>
+            </li>
         {{/each}}
-    </div>
-    <div id="createList">
-        <input type="text" id="new-team" placeholder="New team" />
-    </div>
+    </ul>
 </template>

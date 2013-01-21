@@ -1,0 +1,831 @@
+/* :hover adjustments for light background buttons */
+/* line 8, ../sass/zocial.sass */
+.zocial.acrobat:focus, .zocial.acrobat:hover, .zocial.bitcoin:focus, .zocial.bitcoin:hover, .zocial.dropbox:focus, .zocial.dropbox:hover, .zocial.email:focus, .zocial.email:hover, .zocial.eventful:focus, .zocial.eventful:hover, .zocial.github:focus, .zocial.github:hover, .zocial.gmail:focus, .zocial.gmail:hover, .zocial.instapaper:focus, .zocial.instapaper:hover, .zocial.itunes:focus, .zocial.itunes:hover, .zocial.ninetyninedesigns:focus, .zocial.ninetyninedesigns:hover, .zocial.openid:focus, .zocial.openid:hover, .zocial.plancast:focus, .zocial.plancast:hover, .zocial.pocket:focus, .zocial.pocket:hover, .zocial.posterous:focus, .zocial.posterous:hover, .zocial.reddit:focus, .zocial.reddit:hover, .zocial.secondary:focus, .zocial.secondary:hover, .zocial.twitter:focus, .zocial.viadeo:focus, .zocial.viadeo:hover, .zocial.weibo:focus, .zocial.weibo:hover, .zocial.wikipedia:focus, .zocial.wikipedia:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.15)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
+}
+
+/* :active adjustments for light background buttons */
+/* line 58, ../sass/zocial.sass */
+.zocial.acrobat:active, .zocial.bitcoin:active, .zocial.dropbox:active, .zocial.email:active, .zocial.eventful:active, .zocial.github:active, .zocial.gmail:active, .zocial.instapaper:active, .zocial.itunes:active, .zocial.ninetyninedesigns:active, .zocial.openid:active, .zocial.plancast:active, .zocial.pocket:active, .zocial.posterous:active, .zocial.reddit:active, .zocial.secondary:active, .zocial.viadeo:active, .zocial.weibo:active, .zocial.wikipedia:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
+}
+
+/* Button icon and color */
+/* Icon characters are stored in unicode private area */
+/* line 87, ../sass/zocial.sass */
+.zocial.acrobat:before {
+  content: "\00E3";
+  color: #fb0000;
+}
+/* line 90, ../sass/zocial.sass */
+.zocial.amazon:before {
+  content: "a";
+}
+/* line 92, ../sass/zocial.sass */
+.zocial.android:before {
+  content: "&";
+}
+/* line 94, ../sass/zocial.sass */
+.zocial.angellist:before {
+  content: "\00D6";
+}
+/* line 96, ../sass/zocial.sass */
+.zocial.aol:before {
+  content: '"';
+}
+/* line 98, ../sass/zocial.sass */
+.zocial.appnet:before {
+  content: "\00E1";
+}
+/* line 100, ../sass/zocial.sass */
+.zocial.appstore:before {
+  content: "A";
+}
+/* line 102, ../sass/zocial.sass */
+.zocial.bitbucket:before {
+  content: "\00E9";
+}
+/* line 104, ../sass/zocial.sass */
+.zocial.bitcoin:before {
+  content: "2";
+  color: #f7931a;
+}
+/* line 107, ../sass/zocial.sass */
+.zocial.blogger:before {
+  content: "B";
+}
+/* line 109, ../sass/zocial.sass */
+.zocial.buffer:before {
+  content: "\00E5";
+}
+/* line 111, ../sass/zocial.sass */
+.zocial.call:before {
+  content: "7";
+}
+/* line 113, ../sass/zocial.sass */
+.zocial.cal:before {
+  content: ".";
+}
+/* line 115, ../sass/zocial.sass */
+.zocial.cart:before {
+  content: "\00C9";
+}
+/* line 117, ../sass/zocial.sass */
+.zocial.chrome:before {
+  content: "[";
+}
+/* line 119, ../sass/zocial.sass */
+.zocial.cloudapp:before {
+  content: "c";
+}
+/* line 121, ../sass/zocial.sass */
+.zocial.creativecommons:before {
+  content: "C";
+}
+/* line 123, ../sass/zocial.sass */
+.zocial.delicious:before {
+  content: "#";
+}
+/* line 125, ../sass/zocial.sass */
+.zocial.digg:before {
+  content: "";
+}
+/* line 127, ../sass/zocial.sass */
+.zocial.disqus:before {
+  content: "Q";
+}
+/* line 129, ../sass/zocial.sass */
+.zocial.dribbble:before {
+  content: "D";
+}
+/* line 131, ../sass/zocial.sass */
+.zocial.dropbox:before {
+  content: "d";
+  color: #1f75cc;
+}
+/* line 134, ../sass/zocial.sass */
+.zocial.drupal:before {
+  content: "\00E4";
+  color: white;
+}
+/* line 137, ../sass/zocial.sass */
+.zocial.dwolla:before {
+  content: "\00E0";
+}
+/* line 139, ../sass/zocial.sass */
+.zocial.email:before {
+  content: "]";
+  color: #312c2a;
+}
+/* line 142, ../sass/zocial.sass */
+.zocial.eventasaurus:before {
+  content: "v";
+  color: #9de428;
+}
+/* line 145, ../sass/zocial.sass */
+.zocial.eventbrite:before {
+  content: "|";
+}
+/* line 147, ../sass/zocial.sass */
+.zocial.eventful:before {
+  content: "'";
+  color: #0066cc;
+}
+/* line 150, ../sass/zocial.sass */
+.zocial.evernote:before {
+  content: "E";
+}
+/* line 152, ../sass/zocial.sass */
+.zocial.facebook:before {
+  content: "f";
+}
+/* line 154, ../sass/zocial.sass */
+.zocial.fivehundredpx:before {
+  content: "0";
+  color: #29b6ff;
+}
+/* line 157, ../sass/zocial.sass */
+.zocial.flattr:before {
+  content: "%";
+}
+/* line 159, ../sass/zocial.sass */
+.zocial.flickr:before {
+  content: "F";
+}
+/* line 161, ../sass/zocial.sass */
+.zocial.forrst:before {
+  content: ":";
+  color: #50894f;
+}
+/* line 164, ../sass/zocial.sass */
+.zocial.foursquare:before {
+  content: "4";
+}
+/* line 166, ../sass/zocial.sass */
+.zocial.github:before {
+  content: "g";
+}
+/* line 168, ../sass/zocial.sass */
+.zocial.gmail:before {
+  content: "m";
+  color: red;
+}
+/* line 171, ../sass/zocial.sass */
+.zocial.google:before {
+  content: "G";
+}
+/* line 173, ../sass/zocial.sass */
+.zocial.googleplay:before {
+  content: "h";
+}
+/* line 175, ../sass/zocial.sass */
+.zocial.googleplus:before {
+  content: "+";
+}
+/* line 177, ../sass/zocial.sass */
+.zocial.gowalla:before {
+  content: "@";
+}
+/* line 179, ../sass/zocial.sass */
+.zocial.grooveshark:before {
+  content: "8";
+}
+/* line 181, ../sass/zocial.sass */
+.zocial.guest:before {
+  content: "?";
+}
+/* line 183, ../sass/zocial.sass */
+.zocial.html5:before {
+  content: "5";
+}
+/* line 185, ../sass/zocial.sass */
+.zocial.ie:before {
+  content: "6";
+}
+/* line 187, ../sass/zocial.sass */
+.zocial.instagram:before {
+  content: "\00DC";
+}
+/* line 189, ../sass/zocial.sass */
+.zocial.instapaper:before {
+  content: "I";
+}
+/* line 191, ../sass/zocial.sass */
+.zocial.intensedebate:before {
+  content: "{";
+}
+/* line 193, ../sass/zocial.sass */
+.zocial.iphone:before {
+  content: "(";
+}
+/* line 195, ../sass/zocial.sass */
+.zocial.itunes:before {
+  content: "i";
+  color: #1a6dd2;
+}
+/* line 198, ../sass/zocial.sass */
+.zocial.klout:before {
+  content: "K";
+}
+/* line 200, ../sass/zocial.sass */
+.zocial.lanyrd:before {
+  content: "-";
+}
+/* line 202, ../sass/zocial.sass */
+.zocial.lastfm:before {
+  content: "l";
+}
+/* line 204, ../sass/zocial.sass */
+.zocial.linkedin:before {
+  content: "L";
+}
+/* line 206, ../sass/zocial.sass */
+.zocial.macstore:before {
+  content: "^";
+}
+/* line 208, ../sass/zocial.sass */
+.zocial.meetup:before {
+  content: "M";
+}
+/* line 210, ../sass/zocial.sass */
+.zocial.myspace:before {
+  content: "_";
+}
+/* line 212, ../sass/zocial.sass */
+.zocial.ninetyninedesigns:before {
+  content: "9";
+  color: #ff5500;
+}
+/* line 215, ../sass/zocial.sass */
+.zocial.openid:before {
+  content: "o";
+  color: #ff921d;
+}
+/* line 218, ../sass/zocial.sass */
+.zocial.opentable:before {
+  content: "\00C7";
+}
+/* line 220, ../sass/zocial.sass */
+.zocial.paypal:before {
+  content: "$";
+}
+/* line 222, ../sass/zocial.sass */
+.zocial.pinboard:before {
+  content: "n";
+}
+/* line 224, ../sass/zocial.sass */
+.zocial.pinterest:before {
+  content: "1";
+}
+/* line 226, ../sass/zocial.sass */
+.zocial.plancast:before {
+  content: "P";
+}
+/* line 228, ../sass/zocial.sass */
+.zocial.plurk:before {
+  content: "j";
+}
+/* line 230, ../sass/zocial.sass */
+.zocial.pocket:before {
+  content: "\00E7";
+  color: #ee4056;
+}
+/* line 233, ../sass/zocial.sass */
+.zocial.podcast:before {
+  content: "`";
+}
+/* line 235, ../sass/zocial.sass */
+.zocial.posterous:before {
+  content: "~";
+}
+/* line 237, ../sass/zocial.sass */
+.zocial.print:before {
+  content: "\00D1";
+}
+/* line 239, ../sass/zocial.sass */
+.zocial.quora:before {
+  content: "q";
+}
+/* line 241, ../sass/zocial.sass */
+.zocial.reddit:before {
+  content: ">";
+  color: red;
+}
+/* line 244, ../sass/zocial.sass */
+.zocial.rss:before {
+  content: "R";
+}
+/* line 246, ../sass/zocial.sass */
+.zocial.scribd:before {
+  content: "}";
+  color: #00d5ea;
+}
+/* line 249, ../sass/zocial.sass */
+.zocial.skype:before {
+  content: "S";
+}
+/* line 251, ../sass/zocial.sass */
+.zocial.smashing:before {
+  content: "*";
+}
+/* line 253, ../sass/zocial.sass */
+.zocial.songkick:before {
+  content: "k";
+}
+/* line 255, ../sass/zocial.sass */
+.zocial.soundcloud:before {
+  content: "s";
+}
+/* line 257, ../sass/zocial.sass */
+.zocial.spotify:before {
+  content: "=";
+}
+/* line 259, ../sass/zocial.sass */
+.zocial.statusnet:before {
+  content: "\00E2";
+  color: white;
+}
+/* line 262, ../sass/zocial.sass */
+.zocial.steam:before {
+  content: "b";
+}
+/* line 264, ../sass/zocial.sass */
+.zocial.stripe:before {
+  content: "\00A3";
+}
+/* line 266, ../sass/zocial.sass */
+.zocial.stumbleupon:before {
+  content: "/";
+}
+/* line 268, ../sass/zocial.sass */
+.zocial.tumblr:before {
+  content: "t";
+}
+/* line 270, ../sass/zocial.sass */
+.zocial.twitter:before {
+  content: "T";
+}
+/* line 272, ../sass/zocial.sass */
+.zocial.viadeo:before {
+  content: "H";
+  color: #f59b20;
+}
+/* line 275, ../sass/zocial.sass */
+.zocial.vimeo:before {
+  content: "V";
+}
+/* line 277, ../sass/zocial.sass */
+.zocial.vk:before {
+  content: "N";
+}
+/* line 279, ../sass/zocial.sass */
+.zocial.weibo:before {
+  content: "J";
+  color: #e6162d;
+}
+/* line 282, ../sass/zocial.sass */
+.zocial.wikipedia:before {
+  content: ",";
+}
+/* line 284, ../sass/zocial.sass */
+.zocial.windows:before {
+  content: "W";
+}
+/* line 286, ../sass/zocial.sass */
+.zocial.wordpress:before {
+  content: "w";
+}
+/* line 288, ../sass/zocial.sass */
+.zocial.xing:before {
+  content: "X";
+}
+/* line 290, ../sass/zocial.sass */
+.zocial.yahoo:before {
+  content: "Y";
+}
+/* line 292, ../sass/zocial.sass */
+.zocial.yelp:before {
+  content: "y";
+}
+/* line 294, ../sass/zocial.sass */
+.zocial.youtube:before {
+  content: "U";
+}
+
+/* Button background and text color */
+/* line 300, ../sass/zocial.sass */
+.zocial.acrobat {
+  background-color: white;
+  color: black;
+}
+/* line 303, ../sass/zocial.sass */
+.zocial.amazon {
+  background-color: #ffad1d;
+  color: #030037;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+/* line 307, ../sass/zocial.sass */
+.zocial.android {
+  background-color: #a4c639;
+}
+/* line 309, ../sass/zocial.sass */
+.zocial.angellist {
+  background-color: black;
+}
+/* line 311, ../sass/zocial.sass */
+.zocial.aol {
+  background-color: red;
+}
+/* line 313, ../sass/zocial.sass */
+.zocial.appnet {
+  background-color: #3178bd;
+}
+/* line 315, ../sass/zocial.sass */
+.zocial.appstore {
+  background-color: black;
+}
+/* line 317, ../sass/zocial.sass */
+.zocial.bitbucket {
+  background-color: #205081;
+}
+/* line 319, ../sass/zocial.sass */
+.zocial.bitcoin {
+  background-color: #efefef;
+  color: #4d4d4d;
+}
+/* line 322, ../sass/zocial.sass */
+.zocial.blogger {
+  background-color: #ee5a22;
+}
+/* line 324, ../sass/zocial.sass */
+.zocial.buffer {
+  background-color: #232323;
+}
+/* line 326, ../sass/zocial.sass */
+.zocial.call {
+  background-color: green;
+}
+/* line 328, ../sass/zocial.sass */
+.zocial.cal {
+  background-color: #d63538;
+}
+/* line 330, ../sass/zocial.sass */
+.zocial.cart {
+  background-color: #333333;
+}
+/* line 332, ../sass/zocial.sass */
+.zocial.chrome {
+  background-color: #006cd4;
+}
+/* line 334, ../sass/zocial.sass */
+.zocial.cloudapp {
+  background-color: white;
+  color: #312c2a;
+}
+/* line 337, ../sass/zocial.sass */
+.zocial.creativecommons {
+  background-color: black;
+}
+/* line 339, ../sass/zocial.sass */
+.zocial.delicious {
+  background-color: #3271cb;
+}
+/* line 341, ../sass/zocial.sass */
+.zocial.digg {
+  background-color: #164673;
+}
+/* line 343, ../sass/zocial.sass */
+.zocial.disqus {
+  background-color: #5d8aad;
+}
+/* line 345, ../sass/zocial.sass */
+.zocial.dribbble {
+  background-color: #ea4c89;
+}
+/* line 347, ../sass/zocial.sass */
+.zocial.dropbox {
+  background-color: white;
+  color: #312c2a;
+}
+/* line 350, ../sass/zocial.sass */
+.zocial.drupal {
+  background-color: #0077c0;
+  color: white;
+}
+/* line 353, ../sass/zocial.sass */
+.zocial.dwolla {
+  background-color: #e88c02;
+}
+/* line 355, ../sass/zocial.sass */
+.zocial.email {
+  background-color: #f0f0eb;
+  color: #312c2a;
+}
+/* line 358, ../sass/zocial.sass */
+.zocial.eventasaurus {
+  background-color: #192931;
+  color: white;
+}
+/* line 361, ../sass/zocial.sass */
+.zocial.eventbrite {
+  background-color: #ff5616;
+}
+/* line 363, ../sass/zocial.sass */
+.zocial.eventful {
+  background-color: white;
+  color: #47ab15;
+}
+/* line 366, ../sass/zocial.sass */
+.zocial.evernote {
+  background-color: #6bb130;
+  color: white;
+}
+/* line 369, ../sass/zocial.sass */
+.zocial.facebook {
+  background-color: #4863ae;
+}
+/* line 371, ../sass/zocial.sass */
+.zocial.fivehundredpx {
+  background-color: #333333;
+}
+/* line 373, ../sass/zocial.sass */
+.zocial.flattr {
+  background-color: #8aba42;
+}
+/* line 375, ../sass/zocial.sass */
+.zocial.flickr {
+  background-color: #ff0084;
+}
+/* line 377, ../sass/zocial.sass */
+.zocial.forrst {
+  background-color: #1e360d;
+}
+/* line 379, ../sass/zocial.sass */
+.zocial.foursquare {
+  background-color: #44a8e0;
+}
+/* line 381, ../sass/zocial.sass */
+.zocial.github {
+  background-color: #fbfbfb;
+  color: #050505;
+}
+/* line 384, ../sass/zocial.sass */
+.zocial.gmail {
+  background-color: #efefef;
+  color: #222222;
+}
+/* line 387, ../sass/zocial.sass */
+.zocial.google {
+  background-color: #4e6cf7;
+}
+/* line 389, ../sass/zocial.sass */
+.zocial.googleplay {
+  background-color: black;
+}
+/* line 391, ../sass/zocial.sass */
+.zocial.googleplus {
+  background-color: #dd4b39;
+}
+/* line 393, ../sass/zocial.sass */
+.zocial.gowalla {
+  background-color: #ff720a;
+}
+/* line 395, ../sass/zocial.sass */
+.zocial.grooveshark {
+  background-color: #111111;
+  color: #eeeeee;
+}
+/* line 398, ../sass/zocial.sass */
+.zocial.guest {
+  background-color: #1b4d6d;
+}
+/* line 400, ../sass/zocial.sass */
+.zocial.html5 {
+  background-color: #ff3617;
+}
+/* line 402, ../sass/zocial.sass */
+.zocial.ie {
+  background-color: #00a1d9;
+}
+/* line 404, ../sass/zocial.sass */
+.zocial.instapaper {
+  background-color: #eeeeee;
+  color: #222222;
+}
+/* line 407, ../sass/zocial.sass */
+.zocial.instagram {
+  background-color: #3f729b;
+}
+/* line 409, ../sass/zocial.sass */
+.zocial.intensedebate {
+  background-color: #0099e1;
+}
+/* line 411, ../sass/zocial.sass */
+.zocial.klout {
+  background-color: #e34a25;
+}
+/* line 413, ../sass/zocial.sass */
+.zocial.itunes {
+  background-color: #efefeb;
+  color: #312c2a;
+}
+/* line 416, ../sass/zocial.sass */
+.zocial.lanyrd {
+  background-color: #2e6ac2;
+}
+/* line 418, ../sass/zocial.sass */
+.zocial.lastfm {
+  background-color: #dc1a23;
+}
+/* line 420, ../sass/zocial.sass */
+.zocial.linkedin {
+  background-color: #0083a8;
+}
+/* line 422, ../sass/zocial.sass */
+.zocial.macstore {
+  background-color: #007dcb;
+}
+/* line 424, ../sass/zocial.sass */
+.zocial.meetup {
+  background-color: #ff0026;
+}
+/* line 426, ../sass/zocial.sass */
+.zocial.myspace {
+  background-color: black;
+}
+/* line 428, ../sass/zocial.sass */
+.zocial.ninetyninedesigns {
+  background-color: white;
+  color: #072243;
+}
+/* line 431, ../sass/zocial.sass */
+.zocial.openid {
+  background-color: whitesmoke;
+  color: #333333;
+}
+/* line 434, ../sass/zocial.sass */
+.zocial.opentable {
+  background-color: #990000;
+}
+/* line 436, ../sass/zocial.sass */
+.zocial.paypal {
+  background-color: white;
+  color: #32689a;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+/* line 440, ../sass/zocial.sass */
+.zocial.pinboard {
+  background-color: blue;
+}
+/* line 442, ../sass/zocial.sass */
+.zocial.pinterest {
+  background-color: #c91618;
+}
+/* line 444, ../sass/zocial.sass */
+.zocial.plancast {
+  background-color: #e7ebed;
+  color: #333333;
+}
+/* line 447, ../sass/zocial.sass */
+.zocial.plurk {
+  background-color: #cf682f;
+}
+/* line 449, ../sass/zocial.sass */
+.zocial.pocket {
+  background-color: white;
+  color: #777777;
+}
+/* line 452, ../sass/zocial.sass */
+.zocial.podcast {
+  background-color: #9365ce;
+}
+/* line 454, ../sass/zocial.sass */
+.zocial.posterous {
+  background-color: #ffd959;
+  color: #bc7134;
+}
+/* line 457, ../sass/zocial.sass */
+.zocial.print {
+  background-color: #f0f0eb;
+  color: #222222;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 461, ../sass/zocial.sass */
+.zocial.quora {
+  background-color: #a82400;
+}
+/* line 463, ../sass/zocial.sass */
+.zocial.reddit {
+  background-color: white;
+  color: #222222;
+}
+/* line 466, ../sass/zocial.sass */
+.zocial.rss {
+  background-color: #ff7f25;
+}
+/* line 468, ../sass/zocial.sass */
+.zocial.scribd {
+  background-color: #231c1a;
+}
+/* line 470, ../sass/zocial.sass */
+.zocial.skype {
+  background-color: #00a2ed;
+}
+/* line 472, ../sass/zocial.sass */
+.zocial.smashing {
+  background-color: #ff4f27;
+}
+/* line 474, ../sass/zocial.sass */
+.zocial.songkick {
+  background-color: #ff0050;
+}
+/* line 476, ../sass/zocial.sass */
+.zocial.soundcloud {
+  background-color: orangered;
+}
+/* line 478, ../sass/zocial.sass */
+.zocial.spotify {
+  background-color: #60af00;
+}
+/* line 480, ../sass/zocial.sass */
+.zocial.statusnet {
+  background-color: #829d25;
+}
+/* line 482, ../sass/zocial.sass */
+.zocial.steam {
+  background-color: black;
+}
+/* line 484, ../sass/zocial.sass */
+.zocial.stripe {
+  background-color: #2f7ed6;
+}
+/* line 486, ../sass/zocial.sass */
+.zocial.stumbleupon {
+  background-color: #eb4924;
+}
+/* line 488, ../sass/zocial.sass */
+.zocial.tumblr {
+  background-color: #374a61;
+}
+/* line 490, ../sass/zocial.sass */
+.zocial.twitter {
+  background-color: #46c0fb;
+}
+/* line 492, ../sass/zocial.sass */
+.zocial.viadeo {
+  background-color: white;
+  color: black;
+}
+/* line 495, ../sass/zocial.sass */
+.zocial.vimeo {
+  background-color: #00a2cd;
+}
+/* line 497, ../sass/zocial.sass */
+.zocial.vk {
+  background-color: #45688e;
+}
+/* line 499, ../sass/zocial.sass */
+.zocial.weibo {
+  background-color: #faf6f1;
+  color: black;
+}
+/* line 502, ../sass/zocial.sass */
+.zocial.wikipedia {
+  background-color: white;
+  color: black;
+}
+/* line 505, ../sass/zocial.sass */
+.zocial.windows {
+  background-color: #0052a4;
+  color: white;
+}
+/* line 508, ../sass/zocial.sass */
+.zocial.wordpress {
+  background-color: #464646;
+}
+/* line 510, ../sass/zocial.sass */
+.zocial.xing {
+  background-color: #0a5d5e;
+}
+/* line 512, ../sass/zocial.sass */
+.zocial.yahoo {
+  background-color: #a200c2;
+}
+/* line 514, ../sass/zocial.sass */
+.zocial.yelp {
+  background-color: #e60010;
+}
+/* line 516, ../sass/zocial.sass */
+.zocial.youtube {
+  background-color: red;
+}
