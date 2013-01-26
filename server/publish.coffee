@@ -1,11 +1,11 @@
-Meteor.authPublish = (args...) ->
-    if @userId
-        return Meteor.publish args...
-    else
-        return
+Meteor.insecurePublish = Meteor.publish
+
+Meteor.publish = (record, func) ->
+    Meteor.insecurePublish record, ->
+        do func if @userId
 
 
-Meteor.authPublish "userData", ->
+Meteor.publish "userData", ->
 
     opts =
         fields:
@@ -16,16 +16,16 @@ Meteor.authPublish "userData", ->
     Meteor.users.find {}, opts
 
 
-Meteor.authPublish 'teams', ->
+Meteor.publish 'teams', ->
     Teams.find()
 
 
-Meteor.authPublish 'feedback', ->
+Meteor.publish 'feedback', ->
     Feedback.find()
 
 
-Meteor.authPublish 'comments', ->
+Meteor.publish 'comments', ->
     Comments.find()
 
-Meteor.authPublish 'comment', (feedbackId) ->
+Meteor.publish 'comment', (feedbackId) ->
     Comments.find feedbackId: feedbackId
