@@ -8,12 +8,12 @@
 
         <div class='container'>
             <div class='row'>
-                <div id="sidebar" class='span2 affixed'>
+                <div id="sidebar" class='span2'>
                     <div class='content-wrapper affix'>
-                        <div id='logout-screen'>
-                            {{loginButtons}}
+                        <div class='affixed-wrapper'>
+                            {{> feedbackButton}}
+                            {{> teams}}
                         </div>
-                        {{> teams}}
                     </div>
                 </div>
 
@@ -26,12 +26,18 @@
 
                 <div id="detail" class='span5'>
                     <div class='content-wrapper affix'>
-                        {{> feedbackDetail}}
-                        {{> comments}}
+                        <div class='affixed-wrapper'>
+                            <div id='logout-screen' class='affixed-offset'>
+                                {{loginButtons}}
+                            </div>
+                            {{> feedbackDetail}}
+                            {{> comments}}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        {{> feedbackForm}}
 
     {{else}}
         {{> login}}

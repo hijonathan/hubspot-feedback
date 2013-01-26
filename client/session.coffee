@@ -1,8 +1,3 @@
-Teams = new Meteor.Collection 'teams'
-Feedback = new Meteor.Collection 'feedback'
-Comments = new Meteor.Collection 'comments'
-
-
 # Session states
 
 # ID of currently selected team
@@ -31,7 +26,8 @@ Meteor.autosubscribe ->
     teamId = Session.get 'teamId'
 
     if teamId
-        Meteor.subscribe 'feedback', teamId
+
+        Meteor.subscribe 'feedback'
 
         if not Session.get 'viewingFeedbackItem'
             feedbackItem = Feedback.findOne {teamId: teamId}, {sort: {createdAt: -1}}

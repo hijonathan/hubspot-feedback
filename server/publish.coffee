@@ -1,4 +1,12 @@
-Meteor.publish "userData", ->
+Meteor.authPublish = (args...) ->
+    if @userId
+        return Meteor.publish args...
+    else
+        return
+
+
+Meteor.authPublish "userData", ->
+
     opts =
         fields:
             name: 1
@@ -8,17 +16,16 @@ Meteor.publish "userData", ->
     Meteor.users.find {}, opts
 
 
-Meteor.publish 'teams', ->
+Meteor.authPublish 'teams', ->
     Teams.find()
 
 
-Meteor.publish 'feedback', (teamId) ->
-    Feedback.find {teamId: teamId}
+Meteor.authPublish 'feedback', ->
+    Feedback.find()
 
 
-Meteor.publish 'comment', (feedbackId) ->
-    Comments.find feedbackId: feedbackId
-
-
-Meteor.publish 'comments', ->
+Meteor.authPublish 'comments', ->
     Comments.find()
+
+Meteor.authPublish 'comment', (feedbackId) ->
+    Comments.find feedbackId: feedbackId
